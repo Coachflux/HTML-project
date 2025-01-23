@@ -1,0 +1,101 @@
+:root {
+  --bg-color: #e0e5ec;
+  --shadow-light: #ffffff;
+  --shadow-dark: #a3b1c6;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.neumorphic {
+  background-color: var(--bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 8px 8px 15px var(--shadow-dark), -8px -8px 15px var(--shadow-light);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 5px var(--shadow-dark), inset -3px -3px 5px var(--shadow-light);
+  color: #333;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+}
+
+button:hover {
+  box-shadow: 3px 3px 5px var(--shadow-dark), -3px -3px 5px var(--shadow-light);
+}
+
+button:active {
+  box-shadow: inset 3px 3px 5px var(--shadow-dark), inset -3px -3px 5px var(--shadow-light);
+}
+
+.hidden {
+  display: none;
+}
+
+#userInfo {
+  margin-top: 30px;
+}
+
+#userInfo p {
+  margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .neumorphic {
+    padding: 20px;
+  }
+}
+
